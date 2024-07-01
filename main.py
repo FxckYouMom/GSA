@@ -2,6 +2,8 @@ import ccxt
 import time
 import requests
 
+print("Bot Start")
+
 def send_telegram_message(text):
     bot_token = '7437512729:AAFBCqInl9ra4jAxpzVBlz6-GM2EqB_gGVo'
     chat_id = '-4279557624'
@@ -117,7 +119,7 @@ def main():
 if __name__ == "__main__":
     while(1):
         try:
-            main()
             time.sleep(600)
+            main()
         except:
             pass
